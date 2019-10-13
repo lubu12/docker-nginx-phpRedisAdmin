@@ -21,10 +21,10 @@ nginx/nginx.conf
 phpredisadmin/php-fpm.conf
 phpredisadmin/php.ini
 phpredisadmin/www.conf
-phpredisadmin/config.inc.php
 ```
 
 ## Create config.inc.php under phpredisadmin/ - phpRedisAdmin configuration file
+`touch phpredisadmin/config.inc.php`
 Sample file can be obtained from https://github.com/erikdubbelboer/phpRedisAdmin/blob/master/includes/config.sample.inc.php
 
 ## Add the executable permission to docker-entrypoint.sh to fix the permission denied issue
