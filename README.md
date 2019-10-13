@@ -24,6 +24,9 @@ phpredisadmin/www.conf
 phpredisadmin/config.inc.php
 ```
 
+## Create config.inc.php under phpredisadmin/ - phpRedisAdmin configuration file
+Sample file can be obtained from `https://github.com/erikdubbelboer/phpRedisAdmin/blob/master/includes/config.sample.inc.php`
+
 ## Add the executable permission to docker-entrypoint.sh to fix the permission denied issue
 ```
 chmod +x phpmyadmin/docker-entrypoint.sh
