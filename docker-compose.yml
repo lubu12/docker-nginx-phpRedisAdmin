@@ -16,23 +16,19 @@ services:
     volumes:
      - ${HTML_VOLUME}:${HTML_VOLUME}
     depends_on:
-     - phpmyadmin
+     - phpredisadmin
     networks:
      - backend
 
-  phpmyadmin:
+  phpredisadmin:
     build:
-      context: ./phpmyadmin/
+      context: ./phpredisadmin/
       dockerfile: Dockerfile
       args:
         version: ${PHP_FPM_VERSION}
-    environment:
-     - PMA_HOSTS=${PMA_HOSTS}
-     - PMA_ABSOLUTE_URI=${PMA_ABSOLUTE_URI}
     restart: always
     volumes:
      - ${HTML_VOLUME}:${HTML_VOLUME}
-     - /sessions
     networks:
      - backend
 
