@@ -30,7 +30,7 @@ Sample file can be obtained from https://github.com/erikdubbelboer/phpRedisAdmin
 
 ## Add the executable permission to docker-entrypoint.sh to fix the permission denied issue
 ```
-chmod +x phpmyadmin/docker-entrypoint.sh
+chmod +x phpredisadmin/docker-entrypoint.sh
 ```
 Reference: https://github.com/composer/docker/issues/7
 
