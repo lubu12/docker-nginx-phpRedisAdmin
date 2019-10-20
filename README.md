@@ -47,3 +47,8 @@ docker-compose up -d
 docker-compose down
 docker-compose up --build -d
 ```
+
+## URL to access phpRedisAdmin
+```
+http://YOUR_HOSTNAME/phpRedisAdmin
+```
