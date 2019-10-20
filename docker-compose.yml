@@ -9,8 +9,7 @@ services:
       dockerfile: Dockerfile
       args:
         version: ${NGINX_VERSION}
-    environment:
-     - html_volume=${HTML_VOLUME}
+        html_volume: ${HTML_VOLUME}
     ports:
      - "${NGINX_PORT}:${DOCKER_NGINX_PORT}"
     volumes:
@@ -26,6 +25,7 @@ services:
       dockerfile: Dockerfile
       args:
         version: ${PHP_FPM_VERSION}
+        html_volume: ${HTML_VOLUME}
     restart: always
     volumes:
      - ${HTML_VOLUME}:${HTML_VOLUME}
